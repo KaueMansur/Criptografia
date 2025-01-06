@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografia</title>
+</head>
+<body>
+    <h1>Criptografe palavras e textos!</h1>
+
+    <select id="nome_criptografia">
+        <option value="nones">Nonês</option>
+        <option value="codigo_binario">Código binário</option>
+        <option value="codigo_morse">Código morse</option>
+    </select>
+
+    <div>
+        <label for="palavra_sem_cripto">Palavra sem criptografia:</label>
+        <textarea id="palavra_sem_cripto"></textarea>
+    </div>
+    <div>
+        <label for="palavra_com_cripto">Palavra com criptografia:</label>
+        <textarea id="palavra_com_cripto"></textarea>
+    </div>
+    <button id="btn_criptografar">Criptografar</button>
+    <button id="btn_descriptografar">DesCriptografar</button>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
