@@ -3,27 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Criptografia</title>
 </head>
 <body>
-    <h1>Criptografe palavras e textos!</h1>
+    <header>
+        <h1>Cripto-textos</h1>
+        <h2>Encripte textos e mensagens!</h2>
+    </header>
+    <main>
+        <select id="nome_criptografia">
+            <option value="nones">Nonês</option>
+            <option value="codigo_binario">Código binário</option>
+        </select>
+    
+        <div class="container">
+            <div class="container_text">
+                <label for="palavra_sem_cripto">Palavra sem criptografia:</label>
+                <textarea id="palavra_sem_cripto" cols="60" rows="20"></textarea>
+            </div>
+            <div class="container_text">
+                <label for="palavra_com_cripto">Palavra com criptografia:</label>
+                <textarea id="palavra_com_cripto" cols="60" rows="20"></textarea>
+            </div>
+        </div>
 
-    <select id="nome_criptografia">
-        <option value="nones">Nonês</option>
-        <option value="codigo_binario">Código binário</option>
-        <option value="codigo_morse">Código morse</option>
-    </select>
-
-    <div>
-        <label for="palavra_sem_cripto">Palavra sem criptografia:</label>
-        <textarea id="palavra_sem_cripto"></textarea>
-    </div>
-    <div>
-        <label for="palavra_com_cripto">Palavra com criptografia:</label>
-        <textarea id="palavra_com_cripto"></textarea>
-    </div>
-    <button id="btn_criptografar">Criptografar</button>
-    <button id="btn_descriptografar">DesCriptografar</button>
+        <div class="container">
+            <button id="btn_criptografar">Criptografar</button>
+            <button id="btn_descriptografar">DesCriptografar</button>
+        </div>
+    </main>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
