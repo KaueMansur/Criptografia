@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsivo.css">
     <title>Criptografia</title>
 </head>
 <body>
@@ -14,9 +15,10 @@
     <main>
         <select id="nome_criptografia">
             <option value="nones">Nonês</option>
-            <option value="codigo_binario">Código binário</option>
+            <option value="codigo_binario">Código Binário</option>
+            <option value="codigo_morse">Código Morse</option>
         </select>
-    
+
         <div class="container">
             <div class="container_text">
                 <label for="palavra_sem_cripto">Palavra sem criptografia:</label>
@@ -28,8 +30,9 @@
             </div>
         </div>
 
-        <div class="container">
+        <div class="container cont_button">
             <button id="btn_criptografar">Criptografar</button>
+            <!-- <a class="btn" href="criar_criptografia.html">Criar criptografia</a> -->
             <button id="btn_descriptografar">DesCriptografar</button>
         </div>
     </main>
